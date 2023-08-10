@@ -1,0 +1,86 @@
+{
+    "name": "test-fs8",
+    "version": "0.0.1",
+    "description": "webpack,eslint,prettier,babble setup",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "webpack": "webpack --config webpack.dev.js",
+        "webpack:prod": "webpack --config webpack.prod.js",
+        "start": "set NODE_ENV=development&& webpack serve --config webpack.dev.js",
+        "start:prod": "set NODE_ENV=production&& webpack serve --config webpack.prod.js",
+        "prettier": "prettier --write .",
+        "eslint": "eslint --fix ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dharmikpatel21/test.git"
+    },
+    "keywords": [
+        "webpack",
+        "react",
+        "prettier",
+        "eslint",
+        "js",
+        "babble"
+    ],
+    "author": "Dharmik Patel",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dharmikpatel21/test/issues"
+    },
+    "homepage": "https://github.com/dharmikpatel21/test#readme",
+    "dependencies": {
+        "bootstrap": "^5.3.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.22.5",
+        "@babel/eslint-parser": "^7.22.5",
+        "@babel/eslint-plugin": "^7.22.5",
+        "@babel/preset-env": "^7.22.5",
+        "autoprefixer": "^10.4.14",
+        "babel-loader": "^9.1.2",
+        "clean-webpack-plugin": "^4.0.0",
+        "css-loader": "^6.8.1",
+        "cssnano": "^6.0.1",
+        "dotenv": "^16.3.1",
+        "dotenv-webpack": "^8.0.1",
+        "eslint": "^8.44.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-jsx-a11y": "^6.7.1",
+        "eslint-plugin-react": "^7.32.2",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "html-webpack-plugin": "^5.5.3",
+        "lint-staged": "^13.2.3",
+        "postcss": "^8.4.24",
+        "postcss-import": "^15.1.0",
+        "postcss-loader": "^7.3.3",
+        "postcss-nesting": "^12.0.0",
+        "postcss-preset-env": "^9.0.0",
+        "prettier": "2.8.8",
+        "sass": "^1.63.6",
+        "sass-loader": "^13.3.2",
+        "style-loader": "^3.3.3",
+        "tailwindcss": "^3.3.2",
+        "webpack": "^5.88.1",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^4.15.1",
+        "webpack-merge": "^5.9.0"
+    },
+    "lint-staged": {
+        "*.{js,html,jsx}": [
+            "prettier --write",
+            "eslint --fix"
+        ]
+    },
+    "browserslist": [
+        "last 1 version",
+        "> 1%",
+        "not dead"
+    ]
+}

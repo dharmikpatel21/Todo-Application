@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+    display: flex;
+    gap: 20px;
+    & > .logo {
+        color: brown;
+        &.bluelogo {
+            color: blue;
+        }
+    }
+
+    & > nav {
+        background-color: aqua;
+        display: flex;
+        gap: 20px;
+
+        & > ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1 0px;
+        }
+    }
+}
+
+
