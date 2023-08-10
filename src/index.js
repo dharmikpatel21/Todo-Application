@@ -1,10 +1,11 @@
-import './style.css';
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 
-const str =
-    'jkdfkbsfisbgghegergkererkekhevuehekhegkehekughkghghgkghegkrhgekgheghghgkghgkhgkghkgehgkehge';
-console.log(str);
 
-const a = 2;
-console.log(a);
+const container = document.getElementById('app');
+const root = createRoot(container); // createRoot(container!) if you use TypeScript
+root.render(<h1>Hello dj</h1>);
 
-console.log(process.env.MY_NAME);
+
+
+
