@@ -8,6 +8,11 @@ module.exports = {
         filename: 'main.js',
         publicPath: '/',
     },
+    performance: {
+        maxAssetSize: 1000000,
+        maxEntrypointSize: 400000,
+        hints: "warning"
+      },
     module: {
         rules: [
             {
