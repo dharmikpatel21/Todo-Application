@@ -9,8 +9,8 @@ module.exports = {
         publicPath: '/',
     },
     performance: {
-        maxAssetSize: 1000000,
-        maxEntrypointSize: 400000,
+        maxAssetSize: 1000000000,
+        maxEntrypointSize: 400000000,
         hints: "warning"
       },
     module: {

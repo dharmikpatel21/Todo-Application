@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ['./src/**/*.{html,js,jsx}'],
+    content: ["./src/**/*.{jsx,js}"],
     theme: {
-        extend: {},
+      extend: {},
     },
-    plugins: [],
-};
+    plugins: [
+      // eslint-disable-next-line global-require
+      require('@tailwindcss/forms'),
+    ],
+  }
